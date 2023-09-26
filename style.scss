@@ -1,0 +1,73 @@
+.dialog-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #777;
+}
+
+.dialog {
+  background-color: #fff;
+  max-height: 500px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    background-color: #ddd;
+    display: flex;
+    height: 75px;
+  }
+
+  &__header-title-container {
+    width: 65%;
+  }
+
+  &__header-title {
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__header-button {
+    min-width: 35%;
+    cursor: pointer;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__content-block {
+    &_left {
+      width: 30%;
+      border-right: 1px solid #ccc;
+    }
+
+    &_right {
+      width: 70%;
+      overflow-y: auto;
+      max-height: 300px;
+    }
+  }
+
+  &__footer {
+    background-color: #ddd;
+    text-align: center;
+    word-wrap: break-word;
+    height: 110px;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+}
